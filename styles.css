@@ -75,13 +75,13 @@ a:focus-visible, button:focus-visible {
   height: 28px;
   border-radius: 8px;
   background:  #000000 ;
-  border:1;
-  border-color: #e6ecf5;
+  border: 0.9px solid #2e2f30;
+  align-content: center;
   display: grid;
   place-items: center;
   font-family: var(--mono);
   font-weight: 700;
-  font-size: 15px;
+  font-size: 20px;
   color: #ecedef;
 }
 
