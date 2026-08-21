@@ -74,7 +74,7 @@ a:focus-visible, button:focus-visible {
   width: 28px;
   height: 28px;
   border-radius: 8px;
-  background: linear-gradient(135deg, var(--accent), #000000);
+  background:  #000000 ;
   display: grid;
   place-items: center;
   font-family: var(--mono);
