@@ -74,13 +74,13 @@ a:focus-visible, button:focus-visible {
   width: 28px;
   height: 28px;
   border-radius: 8px;
-  background: linear-gradient(135deg, var(--accent), #2f5eb0);
+  background: linear-gradient(135deg, var(--accent), #000000);
   display: grid;
   place-items: center;
   font-family: var(--mono);
   font-weight: 700;
   font-size: 13px;
-  color: #0b1220;
+  color: #ecedef;
 }
 
 .topnav {
