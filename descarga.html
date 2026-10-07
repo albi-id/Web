@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Joinia — Profesionales para tu hogar</title>
+<meta name="description" content="Joinia conecta personas con profesionales y oficios para el hogar cerca de su domicilio. Disponible en Google Play." />
+
+<!-- Vista previa al compartir el link (Instagram, WhatsApp, etc.) -->
+<meta property="og:title" content="Joinia — Profesionales para tu hogar" />
+<meta property="og:description" content="Conectá con profesionales y oficios cerca de tu domicilio. Descargala en Google Play." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://webconterminos.vercel.app/descarga.html" />
+<!-- Subí una imagen (ej: preview.png, 1200x630) a la misma carpeta y descomentá: -->
+<!-- <meta property="og:image" content="https://webconterminos.vercel.app/preview.png" /> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #000;
+    color: #fff;
+    font-family: 'Inter', -apple-system, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px 32px;
+  }
+  .card {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+  }
+  .mark { margin-bottom: 8px; }
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    margin-bottom: 12px;
+  }
+  .tagline {
+    color: #94a3b8;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+  .tagline strong { color: #6388ba; font-weight: 600; }
+  .availability {
+    color: #64748b;
+    font-size: 13.5px;
+    margin-bottom: 32px;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 12px;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+  }
+  .btn:active { transform: scale(0.98); opacity: 0.9; }
+  .btn-primary {
+    background: #2563eb;
+    color: #fff;
+    padding: 18px 20px;
+    font-size: 17px;
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
+    margin-bottom: 28px;
+  }
+  .btn-secondary {
+    background: #1f2937;
+    color: #e2e8f0;
+    border: 1px solid #334155;
+  }
+  .btn-danger {
+    background: transparent;
+    color: #94a3b8;
+    border: 1px solid #1e293b;
+    font-weight: 500;
+    font-size: 14.5px;
+  }
+  .section-label {
+    color: #64748b;
+    font-size: 12.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+  footer {
+    margin-top: 40px;
+    color: #475569;
+    font-size: 12.5px;
+    text-align: center;
+    line-height: 1.6;
+  }
+  footer a { color: #6388ba; text-decoration: none; }
+</style>
+</head>
+<body>
+  <main class="card">
+
+    <div class="mark">
+      <svg width="72" height="72" viewBox="0 0 64 64" aria-hidden="true">
+        <g fill="none" stroke="#6388ba" stroke-width="6">
+          <rect x="-14" y="-8" width="28" height="16" rx="8" transform="translate(24 26) rotate(25)"/>
+          <rect x="-14" y="-8" width="28" height="16" rx="8" transform="translate(40 38) rotate(25)"/>
+        </g>
+      </svg>
+    </div>
+
+    <h1>Joinia</h1>
+    <p class="tagline">Conectá con <strong>profesionales y oficios</strong> para tu hogar, cerca de tu domicilio.</p>
+    <p class="availability">Disponible para Android · Argentina</p>
+
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.nexos.miapp">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M3.6 2.1c-.3.3-.5.8-.5 1.4v17c0 .6.2 1.1.5 1.4l.1.1 9.5-9.5v-.2L3.7 2z"/>
+        <path d="M16.4 15.3l-3.2-3.2v-.2l3.2-3.2.1.1 3.8 2.2c1.1.6 1.1 1.6 0 2.2l-3.8 2.1z"/>
+        <path d="M16.5 15.2L13.2 12 3.6 21.6c.4.4 1 .4 1.6.1l11.3-6.5"/>
+        <path d="M16.5 8.8L5.2 2.3c-.6-.3-1.2-.3-1.6.1L13.2 12z"/>
+      </svg>
+      Descargar en Google Play
+    </a> 
+  </main>
+
+  <footer>
+    © <span id="year"></span> Joinia · Todos los derechos reservados<br>
+    Consultas: <a href="mailto:nexos.connect@gmail.com">nexos.connect@gmail.com</a>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
